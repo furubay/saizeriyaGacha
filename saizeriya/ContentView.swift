@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        if let url = URL(string: "https://saizeria-gacha.web.app/") {
-            Link("サイゼリヤ ガチャへ進む", destination: url)
+        VStack {
+            if let url = URL(string: "https://saizeria-gacha.web.app/") {
+                Link("サイゼリヤ ガチャへ進む", destination: url)
+                    .padding(.bottom)
+            }
+            Text("(C)2019ShoMaruyama")
+                .padding(.top)
         }
     }
 }
